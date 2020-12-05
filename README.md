@@ -2,6 +2,12 @@
 To make an API to fetch latest videos sorted in reverse chronological order of their 
 publishing date-time from YouTube for a given tag/search query in a paginated response.
 
+## Website Dashboard
+ - Go to : http://localhost:8000/
+
+![](project/images/home.png)
+
+
 ## API Description
  - To get all videos: http://localhost:8000/api/videos/
  ```
