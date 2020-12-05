@@ -10,20 +10,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>FamTube</title>
 </head>
 
 <body>
 
   <!-- As a heading -->
-  <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">Navbar</span>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">FamTube</span>
   </nav>
   <div class="container">
     <div class="row">
 
       {% for video in page_obj %}
-      <div class="col-4">
+      <div class="col-sm-4">
           <div class="card" style="width: 20rem;">
             <img src="{{video.thumbnail_url}}" class="card-img-top" alt="">
             <div class="card-body">
@@ -35,7 +35,7 @@
         </div>
       {% endfor %}
 
-      <div class="pagination">
+      <div class="pagination col-12">
         <span class="step-links">
           {% if page_obj.has_previous %}
           <a href="?page=1">&laquo; first</a>
